@@ -3,6 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
+        sh '''echo \'this is build time"
+'''
         sh 'npm install'
       }
     }
